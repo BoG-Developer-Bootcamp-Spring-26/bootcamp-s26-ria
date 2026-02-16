@@ -116,12 +116,12 @@ function updateLineColor(arrivals) {
     may help you see the results better.
 */
 // EXPECTED: ['DESTINATION', 'DIRECTION', 'EVENT_TIME', 'LINE', 'NEXT_ARR', 'STATION', 'TRAIN_ID', 'WAITING_SECONDS', 'WAITING_TIME']
-console.log(getKeysToArr(railArray));
+ console.log(getKeysToArr(railArray));
 
 // EXPECTED: Array with only the train(s) that is/are coming in 1 minute, this can vary based on real-time data
-console.log(getTrainComingIn1Minute(railArray));
+ console.log(getTrainComingIn1Minute(railArray));
 
 // EXPECTED: Array with only the Blue Line trains, but with LINE changed to 'PINK', this can vary based on real-time data
-console.log(updateLineColor(railArray));
+ console.log(updateLineColor(railArray));
 // EXPECTED: true as the original railArray should not be modified
-console.log(railArray.some((arrival) => arrival.LINE === "BLUE"));
+ console.log(railArray.some((arrival) => arrival.LINE === "BLUE"));
